@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -9,10 +10,15 @@ namespace book_store_for_developers.Models
     {
         public int BookId { get; set; }
         public int CategoryId { get; set; }
+        [Required(ErrorMessage = "Enter the title of the book")] 
+        [StringLength(100)]
         public string BookTitle { get; set; }
+        [Required(ErrorMessage = "Enter the author of the book")]
+        [StringLength(100)]
         public string BookAuthor { get; set; }
         public string PublishingHouse { get; set; }
         public DateTime ReleaseDate { get; set; }
+        [StringLength(100)]
         public string ImageFileName { get; set; }
         public string BookDescryption { get; set; }
         public int NumberOfPages { get; set; }
