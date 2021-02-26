@@ -1,4 +1,6 @@
-﻿using System;
+﻿using book_store_for_developers.DAL;
+using book_store_for_developers.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,9 +10,12 @@ namespace book_store_for_developers.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
+        private BooksContext db = new BooksContext();
         public ActionResult Index()
         {
+            var CategoryList = db.Categories.ToList();
+
+
             return View();
         }
     } 

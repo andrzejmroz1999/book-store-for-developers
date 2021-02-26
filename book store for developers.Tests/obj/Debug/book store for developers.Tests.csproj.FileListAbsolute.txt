@@ -1,0 +1,30 @@
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\bin\Debug\book store for developers.Tests.dll
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\bin\Debug\book store for developers.Tests.pdb
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\bin\Debug\book store for developers.dll
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\bin\Debug\EntityFramework.dll
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\bin\Debug\System.Web.Razor.dll
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\bin\Debug\book store for developers.pdb
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\bin\Debug\book store for developers.dll.config
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\bin\Debug\EntityFramework.xml
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\bin\Debug\System.Web.Razor.xml
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\obj\Debug\book store for developers.Tests.csprojAssemblyReference.cache
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\obj\Debug\book store for developers.Tests.csproj.CoreCompileInputs.cache
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\obj\Debug\book store for developers.Tests.csproj.CopyComplete
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\obj\Debug\book store for developers.Tests.dll
+C:\Users\andrz\source\repos\book store for developers\book store for developers.Tests\obj\Debug\book store for developers.Tests.pdb
