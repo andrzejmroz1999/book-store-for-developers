@@ -1,20 +1,17 @@
-﻿using book_store_for_developers.Models;
+﻿using book_store_for_developers.Migrations;
+using book_store_for_developers.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Web;
 
 namespace book_store_for_developers.DAL
 {
-    public class BooksInitializer : DropCreateDatabaseAlways<BooksContext>
-    {
-        protected override void Seed(BooksContext context)
-        {
-            SeedBooksData(context);
-        }
-
-        private void SeedBooksData(BooksContext context)
+    public class BooksInitializer : MigrateDatabaseToLatestVersion<BooksContext,Configuration>
+    {      
+        public static void SeedBooksData(BooksContext context)
         {
             var categories = new List<Category>
             {
@@ -27,7 +24,7 @@ namespace book_store_for_developers.DAL
                 new Category() {CategoryId=7,CategoryName="Others", IconFileName="Others.png",CategoryDescyption="Other books"},
             };
 
-            categories.ForEach(k => context.Categories.Add(k));
+            categories.ForEach(k => context.Categories.AddOrUpdate(k));
             context.SaveChanges();
 
             var books = new List<Book>
@@ -37,7 +34,7 @@ namespace book_store_for_developers.DAL
               new Book() {BookAuthor="Grolemund Garrett",BookTitle="Język R. Kompletny zestaw narzędzi dla analityków danych",CategoryId=1,BookPrice=59,ReleaseDate=Convert.ToDateTime("2020-08-04"),Bestseller=true,ImageFileName="jezykR.png"},
               new Book() {BookAuthor="Matthes Eric",BookTitle="Python. Instrukcje dla programisty",CategoryId=1,BookPrice=64,ReleaseDate=Convert.ToDateTime("05-05-2020"),Bestseller=true,ImageFileName="python.png"},
             };
-            books.ForEach(k => context.Books.Add(k));
+            books.ForEach(k => context.Books.AddOrUpdate(k));
             context.SaveChanges();
 
         }

@@ -25,6 +25,7 @@ namespace book_store_for_developers.Models
         public decimal BookPrice { get; set; }
         public bool Bestseller { get; set; }
         public bool Hidden { get; set; }
+        public bool Ebook { get; set; }
         
 
 

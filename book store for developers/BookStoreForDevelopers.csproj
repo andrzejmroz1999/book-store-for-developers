@@ -123,6 +123,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102261130278_InitialCreate.cs" />
+    <Compile Include="Migrations\202102261130278_InitialCreate.Designer.cs">
+      <DependentUpon>202102261130278_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102261443561_AddEbookFieldToBookClass.cs" />
+    <Compile Include="Migrations\202102261443561_AddEbookFieldToBookClass.designer.cs">
+      <DependentUpon>202102261443561_AddEbookFieldToBookClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Order.cs" />
@@ -154,6 +163,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202102261130278_InitialCreate.resx">
+      <DependentUpon>202102261130278_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102261443561_AddEbookFieldToBookClass.resx">
+      <DependentUpon>202102261443561_AddEbookFieldToBookClass.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
