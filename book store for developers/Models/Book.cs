@@ -17,6 +17,7 @@ namespace book_store_for_developers.Models
         [StringLength(100)]
         public string BookAuthor { get; set; }
         public string PublishingHouse { get; set; }
+        public DateTime DateAdded { get; set; }
         public DateTime ReleaseDate { get; set; }
         [StringLength(100)]
         public string ImageFileName { get; set; }

@@ -79,3 +79,4 @@ C:\Users\andrz\source\repos\book store for developers\book store for developers\
 C:\Users\andrz\source\repos\book store for developers\book store for developers\obj\Debug\book_store_for_developers.Migrations.InitialCreate.resources
 C:\Users\andrz\source\repos\book store for developers\book store for developers\obj\Debug\BookStoreForDevelopers.csproj.GenerateResource.cache
 C:\Users\andrz\source\repos\book store for developers\book store for developers\obj\Debug\book_store_for_developers.Migrations.AddEbookFieldToBookClass.resources
+C:\Users\andrz\source\repos\book store for developers\book store for developers\obj\Debug\book_store_for_developers.Migrations.AddingDateAddedField.resources

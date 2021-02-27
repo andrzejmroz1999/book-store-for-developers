@@ -29,10 +29,10 @@ namespace book_store_for_developers.DAL
 
             var books = new List<Book>
             {
-              new Book() {BookAuthor="Prata Stephen",BookTitle="Język C++. Szkoła programowania",CategoryId=1,BookPrice=64,ReleaseDate=Convert.ToDateTime("05-05-2020"),Bestseller =true,ImageFileName="jezykC++.png"},
-              new Book() {BookAuthor="Schildt Herbert",BookTitle="Java. Przewodnik dla początkujących",CategoryId=1,BookPrice=72,ReleaseDate=Convert.ToDateTime("05-05-2020"),Bestseller=true,ImageFileName="java.png"},
-              new Book() {BookAuthor="Grolemund Garrett",BookTitle="Język R. Kompletny zestaw narzędzi dla analityków danych",CategoryId=1,BookPrice=59,ReleaseDate=Convert.ToDateTime("2020-08-04"),Bestseller=true,ImageFileName="jezykR.png"},
-              new Book() {BookAuthor="Matthes Eric",BookTitle="Python. Instrukcje dla programisty",CategoryId=1,BookPrice=64,ReleaseDate=Convert.ToDateTime("05-05-2020"),Bestseller=true,ImageFileName="python.png"},
+              new Book() {BookAuthor="Prata Stephen",BookTitle="Język C++. Szkoła programowania",CategoryId=1,BookPrice=64,ReleaseDate=Convert.ToDateTime("05-05-2020"),DateAdded=DateTime.Now,Bestseller =true,ImageFileName="jezykC++.png"},
+              new Book() {BookAuthor="Schildt Herbert",BookTitle="Java. Przewodnik dla początkujących",CategoryId=1,BookPrice=72,ReleaseDate=Convert.ToDateTime("05-05-2020"),DateAdded=DateTime.Now,Bestseller=true,ImageFileName="java.png"},
+              new Book() {BookAuthor="Grolemund Garrett",BookTitle="Język R. Kompletny zestaw narzędzi dla analityków danych",CategoryId=1,BookPrice=59,ReleaseDate=Convert.ToDateTime("2020-08-04"),DateAdded=DateTime.Now,Bestseller=true,ImageFileName="jezykR.png"},
+              new Book() {BookAuthor="Matthes Eric",BookTitle="Python. Instrukcje dla programisty",CategoryId=1,BookPrice=64,ReleaseDate=Convert.ToDateTime("05-05-2020"),DateAdded=DateTime.Now,Bestseller=true,ImageFileName="python.png"},
             };
             books.ForEach(k => context.Books.AddOrUpdate(k));
             context.SaveChanges();

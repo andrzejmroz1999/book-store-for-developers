@@ -131,6 +131,10 @@
     <Compile Include="Migrations\202102261443561_AddEbookFieldToBookClass.designer.cs">
       <DependentUpon>202102261443561_AddEbookFieldToBookClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102271107587_AddingDateAddedField.cs" />
+    <Compile Include="Migrations\202102271107587_AddingDateAddedField.designer.cs">
+      <DependentUpon>202102271107587_AddingDateAddedField.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\Category.cs" />
@@ -170,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202102261443561_AddEbookFieldToBookClass.resx">
       <DependentUpon>202102261443561_AddEbookFieldToBookClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102271107587_AddingDateAddedField.resx">
+      <DependentUpon>202102271107587_AddingDateAddedField.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
