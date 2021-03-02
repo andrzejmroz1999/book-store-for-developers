@@ -17,10 +17,8 @@
 
                 <nav>
                     <ul id="MenuItems">
-
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="">About us</a></li>
+                        <li><a href="@Url.Content("~/")">Home</a></li>
+                        <li><a href="@Url.Action("StaticPages","Home", new { name = "AboutUs" })">About us</a></li>
                         <li><a href="">Cart</a></li>
                         <li><a href="account.html">Account</a></li>
                     </ul>
@@ -28,7 +26,7 @@
                 <a href="cart.html">
 
                     <img src="@Url.Content("~/Content/images/cart.png")" alt="" width="30px" height="30px" />
-                </a>              
+                </a>
             </div>
             <div class="row">
 
@@ -36,8 +34,8 @@
             </div>
         </div>
     </div>
-<div>
-    @RenderBody()
+    <div>
+        @RenderBody()
     </div>
 
 
@@ -46,6 +44,8 @@
 
     <div class="footer">
     </div>
+
     @RenderSection("Scripts", required: false)
+
 </body>
 </html>

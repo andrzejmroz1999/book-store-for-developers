@@ -14,9 +14,13 @@ namespace book_store_for_developers.Controllers
         public ActionResult Index()
         {
            var CategoryList = db.Categories.ToList();
-           // var BooksList = db.Books.ToList();
+           
 
             return View();
+        }
+        public ActionResult StaticPages(string name)
+        {
+            return View(name);
         }
     } 
 }
