@@ -102,11 +102,36 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\banner.jpg" />
+    <Content Include="Content\images\cart.png" />
+    <Content Include="Content\images\computerGraphics.png" />
+    <Content Include="Content\images\database.png" />
+    <Content Include="Content\images\dommaly.png" />
+    <Content Include="Content\images\java.jpg" />
+    <Content Include="Content\images\jezykC++.jpg" />
+    <Content Include="Content\images\językR.jpg" />
+    <Content Include="Content\images\networksAndServers.png" />
+    <Content Include="Content\images\officeApplications.png" />
+    <Content Include="Content\images\Others.jpg" />
+    <Content Include="Content\images\programing.png" />
+    <Content Include="Content\images\python.jpg" />
+    <Content Include="Content\images\security.png" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Prototype\account.html" />
+    <Content Include="Prototype\Book.html" />
+    <Content Include="Prototype\cart.html" />
+    <Content Include="Prototype\Categories.html" />
+    <Content Include="Prototype\index.html" />
+    <Content Include="Prototype\style.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\.vs\E-Commerce-main\config\applicationhost.config" />
+    <Content Include="Content\.vs\E-Commerce-main\v16\.suo" />
+    <Content Include="Content\.vs\ProjectSettings.json" />
+    <Content Include="Content\.vs\slnx.sqlite" />
+    <Content Include="Content\.vs\VSWorkspaceState.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -134,6 +159,10 @@
     <Compile Include="Migrations\202102271107587_AddingDateAddedField.cs" />
     <Compile Include="Migrations\202102271107587_AddingDateAddedField.designer.cs">
       <DependentUpon>202102271107587_AddingDateAddedField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102271809437_test.cs" />
+    <Compile Include="Migrations\202102271809437_test.designer.cs">
+      <DependentUpon>202102271809437_test.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Book.cs" />
@@ -177,6 +206,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202102271107587_AddingDateAddedField.resx">
       <DependentUpon>202102271107587_AddingDateAddedField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102271809437_test.resx">
+      <DependentUpon>202102271809437_test.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

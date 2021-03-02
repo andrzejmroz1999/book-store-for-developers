@@ -13,8 +13,8 @@ namespace book_store_for_developers.Controllers
         private BooksContext db = new BooksContext();
         public ActionResult Index()
         {
-            var CategoryList = db.Categories.ToList();
-
+           var CategoryList = db.Categories.ToList();
+           // var BooksList = db.Books.ToList();
 
             return View();
         }
