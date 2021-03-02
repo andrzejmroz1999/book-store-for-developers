@@ -1,136 +1,76 @@
-﻿@{
+﻿@model book_store_for_developers.ViewModels.HomeViewModel
+@using book_store_for_developers.Infrastructure
+@{
     ViewBag.Title = "Book store for developers";
 }
-  
-  <h2 class="title">Categories</h2>
 
-    <div class="categories">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-3">
-                    <a href="product-details.html">
-                        <img src="@Url.Content("~/Content/images/computerGraphics.png")" alt="" />
-                        <h1>Computer graphics</h1>
-                    </a>
+<h2 class="title">Categories</h2>
 
-                </div>
-                <div class="col-3">
-                    <a href="product-details.html">
-                        <img src="@Url.Content("~/Content/images/database.png")" alt="" />
-                        <h1>Databases</h1>
-                    </a>
-                </div>
-                <div class="col-3">
-                    <a href="product-details.html">
-                        <img src="@Url.Content("~/Content/images/networksAndServers.png")" alt="" />
-                        <h1>Servers</h1>
-                    </a>
-                </div>
-                <div class="col-3">
-                    <a href="product-details.html">
-                        <img src="@Url.Content("~/Content/images/officeApplications.png")" alt="" />
-                        <h1>Office</h1>
-                    </a>
-                </div>
-
-                <div class="col-3">
-                    <a href="product-details.html">
-                        <img src="@Url.Content("~/Content/images/programing.png")" alt="" />
-                        <h1>Programming</h1>
-                    </a>
-                </div>
-                <div class="col-3">
-                    <a href="product-details.html">
-                        <img src="@Url.Content("~/Content/images/security.png")" alt="" />
-                        <h1>Security</h1>
-                    </a>
-                </div>
-                <div class="col-3">
-                    <a href="product-details.html">
-                        <img src="@Url.Content("~/Content/images/Others.jpg")" alt="" />
-                        <h1>Computer graphics</h1>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <section class="banner">
-        
-    </section>
+<div class="categories">
     <div class="small-container">
-        <h2 class="title">Featured Products</h2>
         <div class="row">
-            <div class="col-4">
-                <a href="product-details.html">
+            @foreach (var category in Model.Cagegories)
+            {
+                <div class="col-3">
+                    <a href="@Url.Action("List","Books", new { categoryName = category.CategoryName.ToLower()})">
+                        <img src="@Url.PathIconCategories(category.IconFileName)" alt="" />
+                        <h1>@category.CategoryName</h1>
+                    </a>
 
-                    <img src="images/java.jpg" alt="" />
-                </a>
-            </div>
-            <div class="col-4">
-                <a href="product-details.html">
-                    <img src="images/python.jpg" alt="" />
-                </a>
-            </div>
-            <div class="col-4">
-                <a href="product-details.html">
-                    <img src="images/jezykC++.jpg" alt="" />
-                </a>
-            </div>
-            <div class="col-4">
-                <a href="product-details.html">
-                    <img src="images/pro4-h&m-1499.png" alt="" />
-                </a>
-            </div>
-        </div>
+                </div>
+            }
 
-        <h2 class="title">Latest Products</h2>
-        <div class="row">
-            <div class="col-4">
-                <a href="product-details.html">
-                    <img src="images/językR.jpg" alt="" />
-                </a>
-
-            </div>
-            <div class="col-4">
-                <a href="product-details.html">
-                    <img src="images/pro6-SELECTED-11499.png" alt="" />
-                </a>
-            </div>
-            <div class="col-4">
-                <a href="product-details.html">
-                    <img src="images/pro7-anubhutte-988.png" alt="" />
-                </a>
-            </div>
-            <div class="col-4">
-                <a href="product-details.html">
-                    <img src="images/pro8-biba-3039.png" alt="" />
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-4">
-                <a href="product-details.html">
-                    <img src="images/pro9-dorothy perkins-1245.png" alt="" />
-                </a>
-            </div>
-            <div class="col-4">
-                <a href="product-details.html">
-                    <img src="images/pro10-bobbi brown-5600.png" alt="" />
-                </a>
-            </div>
-            <div class="col-4">
-                <a href="product-details.html">
-                    <img src="images/pro11-AccessHer-39500.png" alt="" />
-                </a>
-            </div>
-            <div class="col-4">
-                <a href="product-details.html">
-                    <img src="images/pro12-fossil-14296.png" alt="" />
-                </a>
-            </div>
         </div>
     </div>
+</div>
+<section class="banner">
+</section>
+<div class="small-container">
+    <h2 class="title">Bestsellers</h2>
+    <div class="row">
+        @foreach (var bestsellers in Model.Bestsellers)
+        {
+
+            <div class="col-4">
+                <a href="@Url.Action("Details", "Books", new { id = bestsellers.BookId})">
+                    <img src="@Url.PathBooks(bestsellers.ImageFileName)" alt="" />
+                </a>
+                <h1>
+                    @bestsellers.BookTitle - @bestsellers.BookAuthor
+                    <a href="@Url.Action("AddToCart","Cart", new { id = bestsellers.BookId })">
+                        <img src="@Url.Content("~/Content/images/addCart.png")" width="40" height="40" />
+                    </a>
+                </h1>
+
+            </div>
+
+
+        }
+    </div>
+</div>
+<div class="small-container">
+    <h2 class="title">Lastests books</h2>
+    <div class="row">
+        @foreach (var latest in Model.Latests)
+        {
+
+            <div class="col-4">
+                <a href="@Url.Action("Details", "Books", new { id = latest.BookId})">
+                    <img src="@Url.PathBooks(latest.ImageFileName)" alt="" />
+                </a>
+                <h1>
+                    @latest.BookTitle - @latest.BookAuthor
+                    <a href="@Url.Action("AddToCart","Cart", new { id = latest.BookId })">
+                        <img src="@Url.Content("~/Content/images/addCart.png")" width="40" height="40" />
+                    </a>
+                </h1>
+
+            </div>
+
+
+        }
+    </div>
+</div>
 
 
 
@@ -138,5 +78,5 @@
 
 
 
-   
+
 

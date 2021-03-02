@@ -1,5 +1,6 @@
 ﻿using book_store_for_developers.DAL;
 using book_store_for_developers.Models;
+using book_store_for_developers.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,10 +14,19 @@ namespace book_store_for_developers.Controllers
         private BooksContext db = new BooksContext();
         public ActionResult Index()
         {
-           var CategoryList = db.Categories.ToList();
+            var categories = db.Categories.ToList();
+            var latests = db.Books.Where(a => !a.Hidden).OrderByDescending(a => a.DateAdded).Take(3).ToList();
+            var bestsellers = db.Books.Where(a => !a.Hidden && a.Bestseller).OrderBy(a => Guid.NewGuid()).Take(3).ToList();
+
+            var vm = new HomeViewModel()
+            {
+                Cagegories = categories,
+                Latests = latests,
+                Bestsellers = bestsellers
+            };
            
 
-            return View();
+            return View(vm);
         }
         public ActionResult StaticPages(string name)
         {
