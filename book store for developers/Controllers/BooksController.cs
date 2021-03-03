@@ -29,8 +29,11 @@ namespace book_store_for_developers.Controllers
             return View(book);
         }
         [ChildActionOnly]
+        [OutputCache(Duration = 60000)]
         public ActionResult CategoriesMenu()
         {
+            
+
             var categories = db.Categories.ToList();
             return PartialView("_CategoriesMenu",categories);
         }

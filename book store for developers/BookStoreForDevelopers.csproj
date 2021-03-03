@@ -167,6 +167,9 @@
     <Compile Include="Infrastructure\AppConfig.cs" />
     <Compile Include="Infrastructure\BooksDetailsDynamicNodeProvider.cs" />
     <Compile Include="Infrastructure\CategoriesDetailsDynamicNodeProvider.cs" />
+    <Compile Include="Infrastructure\Consts.cs" />
+    <Compile Include="Infrastructure\DefaultCasheProvider.cs" />
+    <Compile Include="Infrastructure\ICasheProvider.cs" />
     <Compile Include="Infrastructure\UrlHelpers.cs" />
     <Compile Include="Migrations\202102261130278_InitialCreate.cs" />
     <Compile Include="Migrations\202102261130278_InitialCreate.Designer.cs">
