@@ -4,5 +4,21 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>List</h2>
 
+<div id="Left">
+    <div id="Breadcrumb">
+        <img src="@Url.Content("~/Content/images/dommaly.png")" height="50" width="50" />
+        <a href="link">
+            Start > ASP.NET
+        </a>
+       @Html.Action("CategoriesMenu")
+    </div>
+</div>
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Books</h2>
+        
+    </div>
+
+    @Html.Partial("_BooksList")
+</div>

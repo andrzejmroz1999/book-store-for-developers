@@ -1,4 +1,5 @@
-﻿using System;
+﻿using book_store_for_developers.DAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,7 @@ namespace book_store_for_developers.Controllers
 {
     public class BooksController : Controller
     {
+        private BooksContext db = new BooksContext();
         // GET: Books
         public ActionResult Index()
         {
@@ -15,12 +17,20 @@ namespace book_store_for_developers.Controllers
         }
         public ActionResult List(string categoryName)
         {
-            return View();
+            var category = db.Categories.Include("Books").Where(c => c.CategoryName.ToUpper() == categoryName.ToUpper()).Single();
+            var books = category.Books.ToList();
+            return View(books);
         }
 
         public ActionResult Details(string id)
         {
             return View();
+        }
+        [ChildActionOnly]
+        public ActionResult CategoriesMenu()
+        {
+            var categories = db.Categories.ToList();
+            return PartialView("_CategoriesMenu",categories);
         }
     }
 }
