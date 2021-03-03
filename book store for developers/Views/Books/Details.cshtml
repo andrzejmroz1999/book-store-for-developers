@@ -19,19 +19,7 @@
     <div class="row">
         <div class="col-2">
             <img src="@Url.PathBooks(Model.ImageFileName)" alt="" id="ProductImg">
-            <h4>Products from the same category</h4>
-            <div class="small-img-row">
-                
-                <div class="small-img-col">
-                    <img src="images/python.jpg" alt="" class="small-img">
-                </div>
-                <div class="small-img-col">
-                    <img src="images/jezykC++.jpg" alt="" class="small-img">
-                </div>
-                <div class="small-img-col">
-                    <img src="images/językR.jpg" alt="" class="small-img">
-                </div>
-            </div>
+            @Html.Action("SameCategory")
 
         </div>
         <div class="col-2">
@@ -40,7 +28,7 @@
 
 
             <div id="bookPrice">
-                @string.Format("{0:0.##}", Model.BookPrice) zŁ
+             <h2>  Price - @string.Format("{0:0.##}", Model.BookPrice) zŁ</h2>
                 </div>
             <a href="@Url.Action("AddToCart","Cart", new { id = Model.BookId })" class="btn3">Add to Cart</a>
             <h3>Book description <i class="fa fa-indent"></i></h3>

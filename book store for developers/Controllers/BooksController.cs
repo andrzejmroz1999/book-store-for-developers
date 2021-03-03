@@ -34,6 +34,15 @@ namespace book_store_for_developers.Controllers
             var categories = db.Categories.ToList();
             return PartialView("_CategoriesMenu",categories);
         }
+        public ActionResult SameCategory(int id)
+        {
+            var numberOfCategeroii = db.Books.Where(b => b.BookId == id).Single();
+            
+                     
+            var books = db.Books.Where(b => b.CategoryId == numberOfCategeroii.CategoryId && b.BookId != id).Take(2);
+            
+            return PartialView("_SameCategory", books);
+        }
 
     }
 }
