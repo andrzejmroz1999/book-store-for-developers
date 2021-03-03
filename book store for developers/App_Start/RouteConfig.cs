@@ -14,6 +14,11 @@ namespace book_store_for_developers
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "BooksDetails",
+                url: "book-{id}.html",
+                defaults: new { controller = "Books", action = "Details" });
+
+            routes.MapRoute(
                 name: "BooksList",
                 url: "Category/{categoryName}",
                 defaults: new { controller = "Books", action = "List" });

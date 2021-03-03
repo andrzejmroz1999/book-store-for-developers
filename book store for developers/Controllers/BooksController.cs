@@ -22,9 +22,11 @@ namespace book_store_for_developers.Controllers
             return View(books);
         }
 
-        public ActionResult Details(string id)
+        public ActionResult Details(int id)
         {
-            return View();
+            
+            var book = db.Books.Find(id);
+            return View(book);
         }
         [ChildActionOnly]
         public ActionResult CategoriesMenu()
@@ -32,5 +34,6 @@ namespace book_store_for_developers.Controllers
             var categories = db.Categories.ToList();
             return PartialView("_CategoriesMenu",categories);
         }
+
     }
 }

@@ -29,10 +29,10 @@ namespace book_store_for_developers.DAL
 
             var books = new List<Book>
             {
-              new Book() {BookId = 1, BookAuthor="Prata Stephen",BookTitle="Język C++. Szkoła programowania",CategoryId=1,BookPrice=64,ReleaseDate=Convert.ToDateTime("05-05-2020"),DateAdded=DateTime.Now,Bestseller =true,ImageFileName="jezykCpp.jpg"},
-              new Book() {BookId = 2,BookAuthor="Schildt Herbert",BookTitle="Java. Przewodnik dla początkujących",CategoryId=1,BookPrice=72,ReleaseDate=Convert.ToDateTime("05-05-2020"),DateAdded=DateTime.Now,Bestseller=true,ImageFileName="java.jpg"},
-              new Book() {BookId = 3,BookAuthor="Grolemund Garrett",BookTitle="Język R. Kompletny zestaw narzędzi dla analityków danych",CategoryId=1,BookPrice=59,ReleaseDate=Convert.ToDateTime("2020-08-04"),DateAdded=DateTime.Now,Bestseller=true,ImageFileName="jezykR.jpg"},
-              new Book() {BookId = 4,BookAuthor="Matthes Eric",BookTitle="Python. Instrukcje dla programisty",CategoryId=1,BookPrice=64,ReleaseDate=Convert.ToDateTime("05-05-2020"),DateAdded=DateTime.Now,Bestseller=true,ImageFileName="python.jpg"},
+              new Book() {BookId=1,BookAuthor="Prata Stephen",BookTitle="Język C++. Szkoła programowania",CategoryId=1,BookPrice=64,ReleaseDate=Convert.ToDateTime("05-05-2020"),DateAdded=DateTime.Now,Bestseller =true,ImageFileName="jezykCpp.jpg"},
+              new Book() {BookId=2,BookAuthor="Schildt Herbert",BookTitle="Java. Przewodnik dla początkujących",CategoryId=1,BookPrice=72,ReleaseDate=Convert.ToDateTime("05-05-2020"),DateAdded=DateTime.Now,Bestseller=true,ImageFileName="java.jpg"},
+              new Book() {BookId=3,BookAuthor="Grolemund Garrett",BookTitle="Język R. Kompletny zestaw narzędzi dla analityków danych",CategoryId=1,BookPrice=59,ReleaseDate=Convert.ToDateTime("2020-08-04"),DateAdded=DateTime.Now,Bestseller=true,ImageFileName="jezykR.jpg"},
+              new Book() {BookId=4,BookAuthor="Matthes Eric",BookTitle="Python. Instrukcje dla programisty",CategoryId=1,BookPrice=64,ReleaseDate=Convert.ToDateTime("05-05-2020"),DateAdded=DateTime.Now,Bestseller=true,ImageFileName="python.jpg"},
             };
             books.ForEach(k => context.Books.AddOrUpdate(k));
             context.SaveChanges();
