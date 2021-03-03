@@ -9,7 +9,7 @@
     <div id="Breadcrumb">
         <img src="@Url.Content("~/Content/images/dommaly.png")" height="50" width="50" />
         <a href="link">
-            Start > ASP.NET
+            @Html.MvcSiteMap().SiteMapPath()
         </a>
        @Html.Action("CategoriesMenu")
     </div>
