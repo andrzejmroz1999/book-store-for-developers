@@ -120,6 +120,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\books\algorytmy.jpg" />
+    <Content Include="Content\books\analizadanych.jpg" />
+    <Content Include="Content\books\asembler.jpg" />
+    <Content Include="Content\books\bi.jpg" />
+    <Content Include="Content\books\bigdata.jpg" />
+    <Content Include="Content\books\bigdata2.jpg" />
+    <Content Include="Content\books\esport.jpg" />
+    <Content Include="Content\books\Excel.jpg" />
+    <Content Include="Content\books\fb.jpg" />
+    <Content Include="Content\books\hakowanie.jpg" />
+    <Content Include="Content\books\hd.jpg" />
+    <Content Include="Content\books\javascript.jpg" />
+    <Content Include="Content\books\Office.jpg" />
+    <Content Include="Content\books\photoshop.jpg" />
+    <Content Include="Content\books\pk.jpg" />
+    <Content Include="Content\books\project.jpg" />
+    <Content Include="Content\books\psieciowe.jpg" />
+    <Content Include="Content\books\sieci.jpg" />
+    <Content Include="Content\books\sql.jpg" />
+    <Content Include="Content\books\sysbazdabych.jpg" />
+    <Content Include="Content\books\vba.jpg" />
+    <Content Include="Content\books\word.jpg" />
+    <Content Include="Content\books\ws.png" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
