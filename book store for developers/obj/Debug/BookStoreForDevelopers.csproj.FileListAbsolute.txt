@@ -88,3 +88,10 @@ C:\Users\andrz\source\repos\book store for developers\book store for developers\
 C:\Users\andrz\source\repos\book store for developers\book store for developers\bin\MvcSiteMapProvider.xml
 C:\Users\andrz\source\repos\book store for developers\book store for developers\bin\MvcSiteMapProvider.WebActivator.pdb
 C:\Users\andrz\source\repos\book store for developers\book store for developers\bin\MvcSiteMapProvider.WebActivator.xml
+C:\Users\andrz\source\repos\book store for developers\book store for developers\bin\Antlr3.Runtime.dll
+C:\Users\andrz\source\repos\book store for developers\book store for developers\bin\Newtonsoft.Json.dll
+C:\Users\andrz\source\repos\book store for developers\book store for developers\bin\System.Web.Optimization.dll
+C:\Users\andrz\source\repos\book store for developers\book store for developers\bin\WebGrease.dll
+C:\Users\andrz\source\repos\book store for developers\book store for developers\bin\Antlr3.Runtime.pdb
+C:\Users\andrz\source\repos\book store for developers\book store for developers\bin\Newtonsoft.Json.xml
+C:\Users\andrz\source\repos\book store for developers\book store for developers\bin\System.Web.Optimization.xml

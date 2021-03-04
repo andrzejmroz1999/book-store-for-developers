@@ -731,6 +731,27 @@ form a {
     transition: transform 1s;
 }
 
+#search-form {
+    float: right;
+    padding: 2px 5px 2px 2px;
+    border: 1px solid #e0e0e0;
+}
+
+    #search-form input[type=search] {
+        border: none;
+        height: 25px;
+        width: 224px;
+    }
+
+    #search-form input[type=submit] {
+        width: 20px;
+        border: none;
+        height: 20px;
+        padding: 5px;
+        background-size: 100% 100%;
+        background: transparent url(Images/searchlogo.png) no-repeat;
+    }
+
 @media only screen and (max-width: 600px) {
     .row {
         text-align: center;

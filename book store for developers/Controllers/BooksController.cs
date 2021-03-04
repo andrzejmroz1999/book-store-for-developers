@@ -15,11 +15,20 @@ namespace book_store_for_developers.Controllers
         {
             return View();
         }
-        public ActionResult List(string categoryName)
+        public ActionResult List(string categoryName, string searchQuery = null)
         {
             var category = db.Categories.Include("Books").Where(c => c.CategoryName.ToUpper() == categoryName.ToUpper()).Single();
-            var books = category.Books.ToList();
-            return View(books);
+            
+            var books = category.Books.Where(a => (searchQuery == null ||
+                                             a.BookTitle.ToLower().Contains(searchQuery.ToLower()) ||
+                                             a.BookAuthor.ToLower().Contains(searchQuery.ToLower())) &&
+                                             !a.Hidden);
+            if (Request.IsAjaxRequest())
+            {
+                return PartialView("_BooksList", books);
+            }
+
+                return View(books);
         }
 
         public ActionResult Details(int id)
@@ -45,6 +54,12 @@ namespace book_store_for_developers.Controllers
             var books = db.Books.Where(b => b.CategoryId == numberOfCategeroii.CategoryId && b.BookId != id).Take(2);
             
             return PartialView("_SameCategory", books);
+        }
+
+        public ActionResult BooksHints(string term)
+        {
+            var books = this.db.Books.Where(a => !a.Hidden && a.BookTitle.ToLower().Contains(term.ToLower())).Take(5).Select(a => new { label = a.BookTitle });
+            return Json(books, JsonRequestBehavior.AllowGet);
         }
 
     }

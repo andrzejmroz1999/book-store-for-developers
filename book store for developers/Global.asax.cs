@@ -1,8 +1,10 @@
+using book_store_for_developers.App_Start;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Optimization;
 using System.Web.Routing;
 
 namespace book_store_for_developers
@@ -13,6 +15,8 @@ namespace book_store_for_developers
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            BundleConfig.Registerbundles(BundleTable.Bundles);
+
         }
     }
 }
