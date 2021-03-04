@@ -29,6 +29,9 @@ nav {
     text-align: center;
     padding-top: 50px;
 }
+.hidden {
+    display: none;
+}
 
 #vocabla-analytics-iframes {
     display: block;

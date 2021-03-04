@@ -73,7 +73,7 @@ namespace book_store_for_developers.Infrastructure
             }
             return 0;
         }
-        public decimal GetCartValue()
+        public decimal DownloadCartValue()
         {
             var cart = DownloadCart();
             return cart.Sum(k => (k.Quantity * k.book.BookPrice));
