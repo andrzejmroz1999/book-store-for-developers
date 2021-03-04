@@ -223,10 +223,13 @@
     </Compile>
     <Compile Include="Infrastructure\AppConfig.cs" />
     <Compile Include="Infrastructure\BooksDetailsDynamicNodeProvider.cs" />
+    <Compile Include="Infrastructure\CartMenager.cs" />
     <Compile Include="Infrastructure\CategoriesDetailsDynamicNodeProvider.cs" />
     <Compile Include="Infrastructure\Consts.cs" />
     <Compile Include="Infrastructure\DefaultCasheProvider.cs" />
     <Compile Include="Infrastructure\ICasheProvider.cs" />
+    <Compile Include="Infrastructure\ISessionMenager.cs" />
+    <Compile Include="Infrastructure\SessionMenager.cs" />
     <Compile Include="Infrastructure\UrlHelpers.cs" />
     <Compile Include="Migrations\202102261130278_InitialCreate.cs" />
     <Compile Include="Migrations\202102261130278_InitialCreate.Designer.cs">
@@ -246,6 +249,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Book.cs" />
+    <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\OrderItem.cs" />

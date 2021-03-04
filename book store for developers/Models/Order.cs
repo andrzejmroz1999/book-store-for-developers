@@ -14,7 +14,7 @@ namespace book_store_for_developers.Models
         public string Name { get; set; }
         [Required(ErrorMessage = "Enter surname")]
         [StringLength(50)]
-        public  string Surname { get; set; }
+        public string Surname { get; set; }
         [Required(ErrorMessage = "Enter street")]
         [StringLength(100)]
         public string Street { get; set; }
@@ -26,12 +26,12 @@ namespace book_store_for_developers.Models
         public string PostCode { get; set; }
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
-        public  string Comment { get; set; }
+        public string Comment { get; set; }
         public DateTime DateAdded { get; set; }
         public OrderStatus OrderStatus { get; set; }
         public decimal OrderValue { get; set; }
 
-        List<OrderItem> OrderItems { get; set; }
+        public List<OrderItem> OrderItems { get; set; }
 
     }
     public enum OrderStatus

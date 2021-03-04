@@ -10,5 +10,7 @@ namespace book_store_for_developers.Infrastructure
         public const string LatestsCaheKey = "LatestsCasheKey";
         public const string BestsellersCasheKey = "BestsellersCasheKey";
         public const string CategoriesCasheKey = "CategoriesCasheKey";
+        public const string CartSessionKey = "CartSessionKey";
+
     }
 }
