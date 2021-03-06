@@ -10,8 +10,14 @@
 		<mvcSiteMapNode title="Cart" controller="Cart" action="Index">
 			<mvcSiteMapNode title="Order data" controller="Cart" action="Pay"/>
 				<mvcSiteMapNode title="Order confirmation" controller="Cart" action="OrderConfirmation"/>
-			
-			
+			<mvcSiteMapNode title="Account" controller="Manage" action="Index">
+			<mvcSiteMapNode title="Registration" controller="Account" action="Register"/>
+			<mvcSiteMapNode title="Login" controller="Account" action="Login"/>
+			<mvcSiteMapNode title="Book edition" controller="Manage" action="AddBook"/>
+			<mvcSiteMapNode title="Your data" controller="Manage" action="Index"/>
+			<mvcSiteMapNode title="Orders" controller="Manage" action="OrdersList"/>
+
+			</mvcSiteMapNode>
 		</mvcSiteMapNode>
 	</mvcSiteMapNode>
 

@@ -384,29 +384,10 @@ small {
     color: #8a8a8a;
     font-size: 14px;
     padding: 60px 0 20px;
+    
 }
 
-.footerCart {
-    background: black;
-    color: black;
-    font-size: 14px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px; /* Wysokoœæ stopki */
-    background: black;
-}
 
-.footerBook {
-    background: black;
-    color: black;
-    font-size: 14px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px; /* Wysokoœæ stopki */
-    background: black;
-}
 
 .footer p {
     color: #8a8a8a;
@@ -648,6 +629,7 @@ td:last-child {
     text-align: right;
 }
 
+
 th:last-child {
     text-align: right;
 }
@@ -678,6 +660,10 @@ th:last-child {
         width: 100px;
         display: inline-block;
     }
+.CheckBox{
+    position:absolute;
+    right:30%;
+}
 
 .form-btn {
     display: inline-block;
