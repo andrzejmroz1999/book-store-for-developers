@@ -12,6 +12,7 @@ namespace book_store_for_developers.ViewModels
         public IEnumerable<Book> Latests { get; set; }
         public IEnumerable<Book> Bestsellers { get; set; }
         
+        
 
     }
 }
